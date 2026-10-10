@@ -1,0 +1,123 @@
+[
+    {
+        "id":1,
+        "images":"/BathroomPaint1.png",
+        "secondImage":"/images/BathroomPaint3.png",
+        "Productname":"Dulux Bathroom + 2.5lt",
+        "Price":"R349.00",
+        "tag":"New"
+    },
+    {
+        "id":2,
+        "images":"/images/WPPaint4.png",
+        "secondImage":"/images/WPPaint2.png",
+        "Productname":"Medal - Professional Waterproofing Paint 5L - Grey - Terra Cotta",
+        "Price":"R169.00",
+        "oldprice":"179.00",
+        "tag":"Sale"
+    },
+    {
+        "id":3,
+        "image":"/images/Spray-Paint.pg",
+        "secondImage":"../public/images/images/Sprayon2.png",
+        "Productname":"Spray-Paint 300ml Net Hammer Silver",
+        "Price":"R260.00",
+        "tag":"New"
+    },
+    {
+        "id":4,
+        "image":"/images/MetalPaint1.png",
+        "secondImage":"/images/Metalpaint2.png",
+        "Productname":"Kurhula Paints Quick Drying Enamel High-Quality Steel Protection & Decoration (Available in 1L & 5L) (Caterpillar Yellow, 5 Liters)",
+        "Price":"R378.00",
+        "oldprice":"390.00",
+        "tag":"Sale"
+    },
+    {
+        "id":5,
+        "image":"/images/Bgrinder.png",
+        "secondImage":"/images/Bgrinder.png",
+        "Productname":"Bosch Professional GWS 700W Angle Grinder with Cutting Discs and Carbon Brush",
+        "Price":"R757.56",
+        "oldprice":"R770.90",
+        "tag":"Sale"
+    },
+    {
+        "id":6,
+        "image":"/images/generator.png",
+        "secondImage":"/images/generator.png",
+        "Productname":"Ryobi 7500W 4-Stroke Key Start Generator",
+        "Price":"20 120.00"
+    },
+    {
+        "id":8,
+        "image":"/images/GasStove.png",
+        "secondImage":"/images/GasStove.png",
+        "Productname":"Industrial 2 Plate Catering Gas Stove",
+        "Price":"1 900.00"
+    },
+    {
+        "id":9,
+        "image":"/images/lawnmower.png",
+        "secondImage":"/images/lawnmower.png",
+        "Productname":"Casals Steel 173cc Petrol Lawnmower, 530 mm Size, Red",
+        "Price":"R4 999.99"
+    },
+    {
+        "id":10,
+        "image":"/images/ratcheting.png",
+        "secondImage":"/images/ratcheting.png",
+        "Productname":"Basics 73-Piece Magnetic Ratcheting Wrench and Electronics Precision Screwdriver Set, Black/Red/Silver",
+        "Price":"R144.42",
+        "oldprice":"R160.00",
+        "tag":"Sale"
+    },
+    {
+        "id":11,
+        "image":"/images/",
+        "secondImage":"/images/",
+        "Productname":"20M Green Garden Hosepipe - Flexible And Durable Hose - WITH FITTINGS",
+        "Price":"R249.00"
+    },
+    {
+        "id":12,
+        "image":"/images/Hose.png",
+        "secondImage":"/images/Hose.png",
+        "Productname":"Multifunction Unfinished Wood",
+        "Price":"R1 302.49"
+    },
+    {
+        "id":13,
+        "image":"/images/wrench1.png",
+        "secondImage":"/images/wrench2.png",
+        "Productname":"Basics Ratcheting Wrench Set, Metric, 5 Piece, Black/Silver",
+        "Price":"R129.99"
+    },
+    {
+        "id":14,
+        "image":"/images/trimmer.png",
+        "secondImage":"/images/trimmer.png",
+        "Productname":"Ryobi RLT-550 550W Electric Line Trimmer",
+        "Price":"R1 030.00",
+        "oldprice":"R1 060.00",
+        "tag":"Sale"
+    },
+    {
+        "id":15,
+        "image":"/images/piller.png",
+        "secondImage":"/images/piller.png",
+        "Productname":"NEIKO 01924A 3-in-1 Automatic Wire Stripper, Cutter, & Crimping Tool, Auto Self-Adjusting Pliers that Cut up to 24 AWG",
+        "Price":"R327.90",
+        "oldprice":"390.00",
+        "tag":"Sale"
+    },
+    {
+        "id":16,
+        "image":"/images/DiggingSpade.png",
+        "secondImage":"/images/DiggingSpade.png",
+        "Productname":"MTS Steel Shaft Digging Spade",
+        "Price":"199.99",
+        "oldprice":"209.99",
+        "tag":"Sale"
+    }
+]

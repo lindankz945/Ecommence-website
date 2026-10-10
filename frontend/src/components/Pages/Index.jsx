@@ -1,0 +1,117 @@
+import {Swiper , SwiperSlide} from 'swiper/react';
+import {Autoplay , EffectFade, Navigation} from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+
+import 'swiper/css/pagination';
+
+//Data
+
+import Products from './../../Product.json';
+import {Link} from 'react-router-dom'
+
+function Index() {
+  return (
+    <>
+    {/* Hero */}
+    <div className="hero">
+        <Swiper 
+        slidesPerView={1}
+        spaceBetween={0}
+        modules={[Autoplay , EffectFade]}
+        effect='fade'
+        loop={true}
+        autoplay={{
+            delay:3000
+        }}
+        >
+            <SwiperSlide>
+                <div className="hero-wrap hero-wrap1">
+                    <div className="hero-content">
+                        <h5>PPC </h5>
+                        <h1>PPC Surebuild 42.5N Cement (50kg) 627933</h1>
+                        <p className="my-3">Mortar, Plaster, Foundations, Patio slabs, Surface beds, Floor screed.</p>
+                        <a href="#" className='btn hero-btn mt-3'>Shop now</a>
+                    </div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className="hero-wrap hero-wrap2">
+                    <div className="hero-content">
+                        <h5>Interior Wall Paint</h5>
+                        <h1>Plascon Polvin Paint White 20L</h1>
+                        <p className="my-3">suitable for interior and exterior use on primed plaster, concrete, and brickwork.</p>
+                        <a href="#" className='btn hero-btn mt-3'>Shop now</a>
+                    </div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className="hero-wrap hero-wrap3">
+                    <div className="hero-content">
+                        <h5>Clay bricks</h5>
+                        <h1></h1>
+                        <p className="my-3">Unbranded NFP Clay Stock Brick 222 x 106 x 73 mm SABS Compliant Standard Red/Orange.</p>
+                        <a href="#" className='btn hero-btn mt-3'>Shop now</a>
+                    </div>
+                </div>
+            </SwiperSlide>
+        </Swiper>
+    </div>
+    {/* Products */}
+    <div className="product-container py-5 my-5">
+        <div className="container position-relative">
+            <div className="row">
+                <div className="section-title mb-5 product-title text-center">
+                    <h2 className="fw-semibold fs-1">Our Featured Products</h2>
+                    <p className="text-muted">Go Big Pay Less</p>
+                </div>
+            </div>
+            <Swiper
+            slidesPerView={4}
+            spaceBetween={20}
+            modules={[Navigation]}
+            navigation={{ nextE1: '.product-swiper-next', prevE1: '.product-swiper-prev' }}
+            breakpoints={{
+                1399:{slidesPerView:4},
+                1199:{slidesPerView:3},
+                991:{slidesPerView:2},
+                767:{slidesPerView:1.5},
+                0:{slidesPerView:1},
+            }}
+            className='mt-4 swiper position-relative'
+            >
+                {Products.filter(product => product.id >= 4 && product.id <= 10).map(product => (
+                    <SwiperSlide key={product.id}>
+                        <div className="product-item text-center position-relative">
+                            <div className="product-image w-50 position-relative overflow-hidden">
+                                <img src={product.image} className='img-fluid' alt="" />
+                                <img src={product.secondImage} className='img-fluid' alt="" />
+                                <div className="product-icons gap-3">
+                                    <div className="product-icon" title='Add to Wishlist'>
+                                        <i className="bi bi-heart fs-5"></i>
+                                    </div>
+                                    <div className="product-icon" title='Add to Cart'>
+                                        <i className="bi bi-cart3 fs-5"></i>
+                                    </div>
+                                </div>
+                                <span className={`tag badge text-white ${product.tag === 'New' ? 'bg-danger' : 'bg-success'}`}>
+                                    {product.tag}
+                                </span>
+                            </div>
+                            <Link to={'/product/${product.id}'} className='text-decoration-none text-black'>
+                                <div className="product-content pt-3">
+                                    <span className="price-text-decoration-none">{product.Price}</span>
+                                    <h3 className="title pt-1">{product.Productname}</h3>
+                                </div>
+                            </Link>
+                        </div>
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+        </div>
+    </div>
+    </>
+  )
+}
+
+export default Index
